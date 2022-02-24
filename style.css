@@ -1,0 +1,2148 @@
+@font-face {
+    font-family: "poppins_bold";
+    src: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "poppins_semi_bold";
+    src: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/fonts/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: "poppins";
+    src: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/fonts/Poppins-Regular.ttf");
+}
+*{
+    font-family: "poppins";
+}
+.page-header{
+    background:  url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/img/header-image-1.png") black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+.page-header-2{
+    background: white;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.main-content h1{
+    color: white;
+    font-size: 4rem;
+    font-family: "poppins_bold";
+}
+
+.top-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    background: rgba(0, 0, 0, 0.58);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    transition: all .3s;
+    z-index: 10;
+}
+.top-navbar img{
+    width: 150px;
+}
+.top-navbar-light img{
+    width: 150px;
+}
+.top-navbar-light{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0px;
+    background: rgba(255, 255, 255, 0.5);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    transition: all .3s;
+    z-index: 9;
+}
+
+#hamburger-btn{
+    width: 30px;
+    border: none;
+    background: transparent;
+    margin-left: 30px;
+    padding: 0px;
+}
+
+#hamburger-btn span{
+    height: 2px;
+    border-radius: 25rem;
+    background: white;
+    display: block;
+    margin-left: auto;
+    transition: all .3s;
+}
+.top-navbar-light #hamburger-btn span{
+    height: 2px;
+    border-radius: 25rem;
+    background: black;
+    display: block;
+    margin-left: auto;
+    transition: all .3s;
+}
+#hamburger-btn span:nth-child(1){
+    width: 85%;
+}
+#hamburger-btn span:nth-child(2){
+    width: 65%;
+    margin: 5px 0px;
+    margin-left: auto;
+}
+#hamburger-btn span:nth-child(3){
+    width: 100%;
+}
+#hamburger-btn:hover span{
+    width: 100%;
+}
+.theme-btn-1{
+    display: inline-block;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 25rem;
+    color: white;
+    text-decoration: none;
+    transition: all .3s;
+    z-index: 9;
+}
+.theme-btn-1:hover{
+    background: white;
+    color: black;
+}
+.theme-btn-2{
+    display: inline-block;
+    border-radius: 25rem;
+    color: white;
+    background: linear-gradient(180deg, #914DE6 0%, #3D80F7 100%);
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.theme-btn-2:hover{
+    color: white;
+}
+.theme-btn-3{
+    display: inline-block;
+    border-radius: 25rem;
+    color: white;
+    background: black;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.theme-btn-3:hover{
+    color: white;
+}
+.theme-btn-4{
+    display: inline-block;
+    border-radius: 25rem;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all .3s;
+}
+.theme-btn-4:hover{
+    color: white;
+    background: black;
+    border-color: white;
+
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+.social-icons a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.social-icons hr{
+    background: white;
+    opacity: 1;
+    width: 25%;
+    margin: 0px;
+    margin-left: 10px;
+    
+}
+.header-img{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.main-heading{
+    width: max-content;
+    margin-left: auto;
+    font-size: 5rem;
+    font-family: "poppins_bold";
+    color: black;
+}
+.gradient-box{
+    background: linear-gradient(45deg, #AA3EE1,#258EFC);
+    padding: 1px;
+    position: relative;
+    margin-left: 10%;
+}
+.gradient-box .bg-white{
+    padding:  10rem;
+}
+.gradient-box .gradient-dots:nth-child(1){
+    position: absolute;
+    top: 0px;
+    left: 35%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, #AA3EE1,#258EFC);
+}
+.gradient-box .gradient-dots:nth-child(2){
+    position: absolute;
+    bottom: 0px;
+    right: 35%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translateY(50%);
+    background: linear-gradient(to right, #AA3EE1,#258EFC);
+}
+.capsule-lady{
+    position: absolute;
+    top: 10%;
+    height: 400px;
+    border-radius: 25rem;
+    width: 550px;
+    overflow: hidden;
+    background-color: #F3F3F3;
+    z-index: 1;
+    left: -15%;
+}
+
+.nav-container{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    transition: all .4s;
+}
+.nav-container .row{
+    height: 100%;
+}
+.nav-container ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    padding-left: 20px;
+}
+.nav-container ul a{
+    color: white;
+    text-decoration: white;
+    font-size: 1.4rem;
+    opacity: .7;
+    display: inline-block;
+    margin-bottom: 6px;
+    padding-bottom: 2px;
+}
+.nav-container ul a.active{
+    opacity: 1;
+    border-bottom: 1px solid  white;
+}
+.bg-black{
+    background-color: black;
+}
+.nav-close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    z-index: 2;
+    width: max-content;
+    padding: 0px;
+}
+.nav-close-btn i{
+    color: white;
+    font-size: 2.6rem;
+}
+.check-out{
+    position: absolute;
+    bottom: 0px;
+    right: 26px;
+    transform: translateY(50%);
+}
+.experience-section{
+    background: black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.experience-section h1{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    font-family: "poppins_bold";
+    line-height: 4rem;
+}
+.find-out{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.experience-section li{
+    margin-bottom: 8px;
+}
+.gradient-circle{
+    position: absolute;
+    top: 50%;
+    width: 180%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.experience-section img:nth-child(1){
+    position: absolute;
+    top: 50%;
+    width: 140%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    /* opacity: .7; */
+}
+
+.consulting-section{
+    background: linear-gradient(to top, #67208B 0.01%, #5242B4 72.89%, #3167C7 117.6%);
+}
+.consulting-section h1{
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    font-family: "poppins_bold";
+
+}
+.consulting-section img:nth-child(2){
+    position: absolute;
+    top: 20px;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.laptop-section{
+    width: 50%;
+    margin: auto;
+    z-index: 2;
+}
+.consulting-section .text-center{
+    width: 65%;
+    margin: auto;
+}
+
+.glass-circle-container{
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0px 4px 800px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,30%);
+    z-index: 1;
+}
+.inteligence-container h1{
+    color: black;
+    text-align: center;
+    font-size: 5rem;
+    font-family: "poppins_bold";
+}
+.inteligence-container p{
+    line-height: 28px;
+}
+.inteligence-container li{
+    margin-bottom: 10px;
+}
+.our-work-container{
+    background: black;
+}
+.our-work-container h1{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    font-family: "poppins_bold";
+}
+.our-work-container .girl-4{
+    width: 50%;
+    margin-left: 15%;
+}
+.count{
+    transform: translateX(-50%);
+    width: max-content;
+}
+.count h2{
+    font-size: 3rem;
+    color: white;
+}
+.work-box{
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 800px rgba(0, 0, 0, 0.08);
+}
+.work-box p{
+    opacity: .8;
+    font-size: 13px;
+}
+
+.arrow-btn{
+    position: absolute;
+    bottom: -10px;
+    right: -5px;
+    transition: all .3s;
+}
+.arrow-btn:hover{
+    right: -20px;
+    padding: 5px 30px;
+}
+.glass-box-2{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 40%;
+    height: 40%;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.1;
+}
+.glass-box-1{
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 60%;
+    height: 60%;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.1;
+}
+.technology-section h1{
+    color: black;
+    font-size: 4rem;
+    font-family: "poppins_bold";
+}
+.gradient-circle-2{
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    padding: 1px;
+    transform: translateX(-10%);
+}
+.gradient-circle-2 .bg-white{
+    width: 100%;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    transform: translate(-1px,-2px);
+    position: relative;
+
+}
+.boy-1{
+    position: absolute;
+    top: 0px;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.latest-post-section{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.latest-post-section h1{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    font-family: "poppins_bold";
+    margin-bottom: 25px;
+}
+.latest-post-section .slide-item{
+    width: 50% ;
+    margin:0px auto ;
+}
+.slide-item p{
+    font-size: 13px;
+}
+.smooth-box{
+    background: white;
+    width: 50%;
+    padding-bottom: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    border-radius: 10rem;
+    background: linear-gradient(180deg, rgba(61, 128, 247, 0.17) 0%, rgba(108, 99, 238, 0.17) 99.99%, rgba(37, 142, 252, 0.17) 100%);
+    backdrop-filter: blur(74px);
+    transition: all .6s;
+
+}
+
+.gradient-bar{
+    height: 6px;
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+}
+footer p{
+    font-size: 14px;
+}
+
+footer h4{
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    margin-bottom: 20px;
+    letter-spacing: 0px;
+    font-family: "poppins_bold";
+    color: black;
+}
+footer h4::after{
+    content: " ";
+    position: absolute;
+    height: 3px;
+    width: 55%;
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    bottom: -10px;
+    left: 0px;
+    border-radius: 25rem;
+}
+footer ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+footer ul li{
+    margin-bottom: 8px;
+}
+footer ul li a{
+    color: black !important;
+    text-decoration: none;
+    font-size: 14px;
+}
+.social-icons-box{
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    color: white !important;
+}
+.about-heading{
+    font-size: 4rem;
+    color: white;
+}
+.about-heading ~ hr{
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    height: 3px;
+    opacity: 1;
+    width: 125%;
+}
+.page-header .about-main{
+    width: 50%;
+}
+.down-arrow{
+    cursor: pointer;
+    animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-20px);
+    }
+  }
+.gradient-line{
+    background: linear-gradient(to bottom, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+}
+.contact-header h2{
+    font-size: 3rem;
+    line-height: 2.5rem;
+    color: black;
+}
+.contact-header h1{
+    font-size: 4rem;
+    line-height: 3.5rem;
+    color: black;
+}
+.fashion-heading{
+    width: max-content;
+    margin: auto;
+}
+.white-circle{
+    width: 100%;
+    padding-bottom: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3) -51.61%, rgba(255, 255, 255, 0.5) 124.21%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(8px);
+    border-radius: 50%;
+    z-index: 1;
+}
+.fashion-heading-section{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    z-index: 2;
+}
+.ellipse-2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 35%;
+}
+.ellipse-1{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 35%;
+}
+.gradient-ball-1{
+    background: linear-gradient(180deg, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+backdrop-filter: blur(800px);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transform: translate(-0%, -150%);
+}
+.gradient-ball-2{
+    background: linear-gradient(180deg, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    backdrop-filter: blur(800px);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: translate(-0%, 200%);
+}
+.contact-section{
+    background: black;
+}
+.contact-section h1{
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    font-family: "poppins_bold";
+    margin-bottom: 25px;
+}
+.contact-section label{
+    text-align: right;
+    color: white;
+    display: block;
+    font-size: 2rem;
+}
+.custom-select{
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    outline: none;
+    font-size: 2rem;
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    /* text-overflow: ''; */
+}
+.custom-select option{
+    color: black;
+    
+}
+.input-container{
+    width: max-content;
+}
+.input-container .gradient-bar{
+    height: 2px;
+    margin-top: 5px;
+}
+.custom-input{
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    width: auto;
+    outline: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+#name{
+    width: 10rem;
+}
+#c_name{
+    width: 10rem;
+}
+#number{
+    width: 18rem;
+}
+#email{
+    width: 24rem;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.contact-section .theme-btn-4{
+    font-size: 1.5rem;
+    padding: 5px 35px;
+}
+.meetus-section h1{
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+}
+.contact-box{
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    padding: 15px 25px;
+    width: 75%;
+}
+
+.contact-box a{
+    color: black !important;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+}
+.icon-circle{
+    padding: 15px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+}
+.inteligence-header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inteligence-header h1{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+}
+.inteligence-heading p{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    width: max-content;
+    margin: auto;
+}
+.inteligence-heading{
+    position: absolute;
+    top: 0%;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.glass-icon-1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glass-icon-2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom:0px;
+    transform: translate(-50%,20%);
+}
+.glass-icon-3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    top: 30%;
+}
+.gradient-icon{
+    position: absolute;
+    z-index: 2;
+    width: 60%;
+}
+.solutionns-section{
+    background-color: black;
+}
+.solution-box{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3) -51.61%, rgba(255, 255, 255, 0.1) 124.21%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    color: white;
+    position: relative;
+}
+.solution-box hr{
+    margin: 0px 0px;
+    background: linear-gradient(to right, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    opacity: 1;
+}
+.solution-box h4{
+    margin: 0px;
+    text-transform: uppercase;
+}
+.solution-box p{
+    font-size: 15px;
+}
+.solution-box-2 hr{
+    height: 2px;
+}
+.solution-box-2 p{
+    font-size: 18px;
+}
+.solution-box-2 .solotion-icon-circle{
+    width: 75px;
+    height: 75px;
+    padding: 15px;
+}
+.solotion-icon-circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #AA3EE1 0%, #7E59EA 51.47%, #258EFC 100%);
+    padding: 10px;
+}
+.solutionns-section .col-lg-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#for-tabs{
+    justify-content: center;
+}
+#for-tabs .nav-link{
+    width: 220px;
+    border-radius: 25rem;
+    border: 1px solid black;
+    margin: 0px 10px;
+    height: 100%;
+    color: black;
+}
+#for-tabs .nav-link.active, .nav-pills .show>.nav-link{
+    color: white !important;
+    background-color: black !important  ;
+}
+.gradient-reports-circle{
+    background: linear-gradient(125deg, #66228D 30%, #3560C1 50%, #66228C 90%, #3362C3 50% );
+    border-radius: 50%;
+    /* padding: 15px; */
+    width: 100%;
+    padding-bottom: 100%;
+    /* z-index: -1; */
+    position: relative;
+}
+.gradient-reports-circle .bg-white{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    padding-bottom: 80%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 5; */
+}
+.report-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#for-tabs ~ .tab-content h1{
+    text-align: center;
+    font-family: "poppins_bold";
+    margin: 3rem 0px;
+}
+#for-tabs ~ .tab-content ul{
+    list-style: none;
+    position: relative;
+    padding: 0px;
+}
+#for-tabs ~ .tab-content ul:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    background: linear-gradient(to bottom, #AA3EE1 0%, #7E59EA 51.47%, #258EFC 100%);
+}
+#for-tabs ~ .tab-content li{
+    position: relative;
+    padding-left: 25px;
+}
+#for-tabs ~ .tab-content li:before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0px;
+    top: 5px;
+    background: linear-gradient(to bottom, #AA3EE1 0%, #7E59EA 51.47%, #258EFC 100%);
+    transform: translateX(-50%);
+}
+.marketing-section{
+    background: linear-gradient(to bottom, #3264C5, #67218C );
+    color: white;
+}
+.marketing-section p{
+    font-size: 14px;
+}
+.marketing-section h1{
+    color: white;
+}
+.simple-border{
+    width: 85%;
+    padding-bottom: 85%;
+    margin: auto;
+    border-width: 30px;
+    border-style: solid;
+    border-color: rgba(170, 61, 225, 0.2);
+    border-radius: 50%;
+}
+.capsule-glass{
+    background: linear-gradient(34.2deg, rgba(255, 255, 255, 0.5) -84.76%, rgba(255, 255, 255, 0.1) 91.07%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(8px);
+    height: 84%;
+    width: 70%;
+    border-radius: 25rem;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    z-index: 2;
+}
+.gradient-ball-3{
+    background: linear-gradient(180deg, #FFFFFF 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    backdrop-filter: blur(800px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 17%;
+    z-index: 1;
+}
+.gradient-ball-4{
+    background: linear-gradient(180deg, #FFFFFF 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    backdrop-filter: blur(800px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: 17%;
+    z-index: 1;
+}
+.capsule-glass-2 img{
+    height: 110%;
+    transform: translateY(-10%);
+    object-fit: cover;
+    margin: auto;
+    display: block;
+}
+.blog-header{
+    background: black;
+    padding: 7rem 0px;
+}
+.blog-detail-header{
+    background: black;
+    padding: 7rem 0px;
+}
+.blog-header h1{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    width: max-content;
+    margin: auto;
+    font-family: "poppins_bold";
+}
+.blog-detail-header h1{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    width: max-content;
+    margin: auto;
+    font-family: "poppins_bold";
+    width: 60%;
+}
+.blog-header hr{
+    height: 3px;
+    opacity: 1;
+    background: linear-gradient(to right, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    width: 50%;
+    margin-left: auto;
+}
+.blog-detail-header hr{
+    height: 3px;
+    opacity: 1;
+    background: linear-gradient(to right, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    width: 50%;
+    margin-left: auto;
+}
+.blog-box{
+    box-shadow: 0px 0px 17px 3px #45454526;
+    position: relative;
+    border-radius: 5px;
+    height: 100%;
+}
+.blog-box h5{
+    color: black;
+}
+.blog-box p{
+    color: #858585;
+}
+.blog-box img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}.blog-box .theme-btn-2{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.transparent-gradient{
+    background: linear-gradient(180deg, rgba(145, 77, 230, 0.25) -15.38%, rgba(100, 104, 239, 0.25) 35.66%, rgba(37, 142, 252, 0.25) 84.62%);
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+}
+.blog-side-bar{
+    border-left: 1px solid #646464;
+    padding-left: 20px;
+}
+.blog-side-bar .accordion-button{
+    color: #787878;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.blog-side-bar .accordion-item{
+    border: none;
+}
+.blog-side-bar .accordion-button:focus{
+    box-shadow: none;
+    background: transparent !important;
+}
+.blog-side-bar .accordion-body ul{
+    list-style: none;
+} 
+.blog-side-bar .accordion-body ul a{
+    color: #787878 !important;
+    text-decoration: none;
+}
+.article-tags ul{
+    list-style: none;
+    padding-left: 20px;
+}
+.article-tags li{
+    margin: 20px 0px;
+}
+.article-tags a{
+    color: #787878 !important;
+    text-decoration: none;
+}
+.get{
+    position: relative;
+    width: max-content;
+}
+.get::after{
+    content: " ";
+    position: absolute;
+    height: 3px;
+    width: 55%;
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    bottom: -10px;
+    left: 0px;
+    border-radius: 25rem;
+}
+.admin-name{
+    color: #258EFC;
+    text-decoration: none;
+}
+.related-post-section{
+    background-color: black;
+}
+.related-post-section h5{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.consulting-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.consulting-header hr{
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    height: 3px;
+    opacity: 1;
+}
+.consulting-header h1{
+    color: black;
+    font-size: 4rem;
+}
+.side-box-glass{
+    width: 45%;
+    height: 85vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3) -51.61%, rgba(255, 255, 255, 0.5) 124.21%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(8px);
+    border-radius: 0px 0px 0px 10rem;
+    z-index: 1;
+}
+.header-laptop{
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 45%;
+}
+.consulting-header .ellipse-2{
+    width: 70%;
+}
+.consulting-header .ellipse-1{
+    width: 45%;
+}
+.data-section{
+    background: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/img/bg-1.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.data-section .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.63);
+}
+.side-img{
+    background: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/img/market.png");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.side-gradient{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #3264C5 0%, #67218C 100%);
+    color: white;
+}
+.side-img .gradient-overlay{
+    background: linear-gradient(180deg, rgba(115, 95, 236, 0.31) -16.4%, rgba(170, 62, 225, 0.31) 83.6%);
+    width: 100%;
+    height: 100%;
+}
+.side-gradient ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border-left: 1px solid white;
+    padding-top: 10px;
+}
+.side-gradient ul li{
+    margin: 10px 0px;
+    position: relative;
+    padding-left: 25px;
+}
+.side-gradient ul li::before{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, 25%);
+}
+.market-dark-section{
+    background: black;
+    color: white;
+    position: relative;
+}
+.dark-circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 18%;
+    background: linear-gradient(34.2deg, rgba(255, 255, 255, 0.5) -84.76%, rgba(255, 255, 255, 0.1) 91.07%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(32px);
+}
+.industry-trend-section h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    color: black;
+    font-family: "poppins_bold";
+}
+.industry-trend-section hr{
+    width: 70%;
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    height: 3px;
+    opacity: 1;
+    margin-top: 0px;
+}
+.industry-trend-section h2{
+    font-size: 2rem;
+    color: black;
+    font-family: "poppins_bold";
+}
+.industry-trend-section ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    padding-top: 10px;
+    border-left: 1px solid black;
+}
+.industry-trend-section li{
+    margin: 10px 0px;
+    position: relative;
+    padding-left: 25px;
+}
+.industry-trend-section li::before{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    transform: translate(-50%, 25%);
+}
+#inustry-report{
+    background: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/img/gradient-circle-bg.svg");
+    background-size: cover;
+    background-position: left;
+}
+#industry-trend{
+    background: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/img/gradient-circle-bg-2.svg");
+    background-position: top;
+    background-size: cover;
+}
+.data-for-brands-section{
+    background: black;
+}
+.data-for-brands-section h1{
+    color: white;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-family: "poppins_bold";
+}
+.full-stop{
+    background: linear-gradient(180deg, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    backdrop-filter: blur(800px);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.data-for-brands-section hr{
+    width: 40%;
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    height: 3px;
+    opacity: 1;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+.data-for-brands-section ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    padding-top: 10px;
+    border-left: 1px solid white;
+}
+.data-for-brands-section li{
+    margin: 10px 0px;
+    position: relative;
+    padding-left: 25px;
+}
+.data-for-brands-section li::before{
+    content: " ";
+    position: absolute;
+    left: 0px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, 25%);
+}
+.half-circle{
+    margin-bottom: -100%;
+}
+.technology-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.technology-header hr{
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    height: 3px;
+    opacity: 1;
+}
+.technology-header h1{
+    color: black;
+    font-size: 4rem;
+}
+.technology-header .white-circle{
+    width: 60%;
+    padding-bottom: 60%;
+    background: linear-gradient(34.2deg, rgba(255, 255, 255, 0.5) -84.76%, rgba(255, 255, 255, 0.1) 91.07%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(8px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 25px 55px rgba(231, 231, 231, 0.623);
+}
+.technology-header .ellipse-2{
+    width: 70%;
+    opacity: .5;
+    top: -50%;
+}
+.technology-header .gradient-ball-1{
+    top: 0%;
+    left: 15%;
+    transform: none;
+}
+.technology-header .gradient-ball-2{
+    top: inherit;
+    bottom: 10%;
+    left: inherit;
+    right: 18%;
+    transform: none;
+}
+.technology-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    width: 68%;
+    z-index: 5;
+}
+.brand-section{
+    background-color: black;
+}
+.brand-section h1{
+    font-size: 5rem;
+    color: white;
+  font-family: "poppins_bold";
+
+}
+.brand-section h1 span{
+    background-clip: content-box;
+    background: linear-gradient(to bottom, #AA3EE1, #725FEC, #258EFC);
+    background: -webkit-linear-gradient(to bottom, #AA3EE1, #725FEC, #258EFC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-family: "poppins_bold";
+}
+.brand-section p{
+    color: rgba(255, 255, 255, 0.849);
+}
+.side-img-2{
+    background: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/img/left-side.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.side-img-2 .overlay{
+    background: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.two-img-section h2{
+    font-size: 2.5rem;
+  font-family: "poppins_bold";
+  color: black;
+
+}
+.two-img-section h2 span{
+    background-clip: content-box;
+    background: linear-gradient(to bottom, #AA3EE1, #725FEC, #258EFC);
+    background: -webkit-linear-gradient(to bottom, #AA3EE1, #725FEC, #258EFC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-family: "poppins_bold";
+}
+.gradient-border{
+    background: linear-gradient(to top, #AA3EE1 , #6667EF ,#258EFC );
+    padding: 3px;
+    position: relative;
+}
+.img-1{
+    width: 110%;
+    margin-left: -10%;
+}
+.img-2{
+    width: 95%;
+    transform: translateY(-15%);
+}
+.gradient-border .img-1 ~ .gradient-overlay{
+    position: absolute;
+    top: 0px;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(170, 62, 225, 0.45) 0%, rgba(115, 95, 236, 0.45) 100%);
+    margin-left: -10%;
+}
+.gradient-border .img-2 ~ .gradient-overlay{
+    position: absolute;
+    top: 0px;
+    width: 95%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(170, 62, 225, 0.45) 0%, rgba(115, 95, 236, 0.45) 100%);
+    margin-top: -10%;
+}
+.intelligence-section{
+    background-color: black;
+}
+.intelligence-section h1{
+    color: white;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-family: "poppins_bold";
+}
+.intelligence-section h1 span{
+    background-clip: content-box;
+    background: linear-gradient(to bottom, #AA3EE1, #725FEC, #258EFC);
+    background: -webkit-linear-gradient(to bottom, #AA3EE1, #725FEC, #258EFC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-family: "poppins_bold";
+}
+.intelligence-section h6{
+    color: white;
+}
+.intelligence-section p{
+    color:  rgba(255, 255, 255, 0.849);;
+}
+.intelligence-section .dark-gradient{
+    background: linear-gradient(to top, rgba(170, 62, 225, 0.2) 0%, rgba(123, 90, 235, 0.2) 26.33%, rgba(57, 130, 248, 0.2) 50.8%, rgba(37, 142, 252, 0) 100%);
+    padding: 0px 25px;
+    border-radius: 0px 0px 10rem 0px;
+    width: 75%;
+}
+.smart-e_commerce-section{
+    background: linear-gradient( to top, #66248E 0%, #4F41A8 48.95%, #4E43A8 48.96%, #3564C4 100%);
+}
+.smart-e_commerce-section h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    color: white;
+    font-family: "poppins_bold";
+}
+.smart-e_commerce-section p{
+    color: white;
+}
+.smart-e_commerce-section .gradient-overlay{
+    background: linear-gradient(to top, rgba(115, 95, 236, 0.44) -0.25%, rgba(170, 62, 225, 0.44) 99.75%);
+    height: 100%;
+}
+.smart-e_commerce-section .right-side-img{
+    background: url("http://localhost/fashion-foresight-services/wp-content/themes/Fashion/img/girl-9.png");
+    /* background-attachment: fixed; */
+    background-position: center center;
+    background-size: cover;
+}
+.center-line{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+
+}
+.two-img-section .light-gradient{
+    background: linear-gradient(to top, rgba(170, 62, 225, 0.14) -17.69%, rgba(100, 104, 239, 0.14) 32.31%, rgba(115, 95, 236, 0.14) 82.31%);
+}
+.immersive-header{
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+.immersive-header h1{
+    font-size: 4rem;
+    color: white;
+}
+.immersive-header hr{
+    background: linear-gradient(to left, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    height: 3px;
+    opacity: 1;
+    width: 100%;
+}
+.immersive-header p{
+    color: white;
+}
+.right-side-white{
+    background: linear-gradient(34.2deg, rgba(255, 255, 255, 0.5) -84.76%, rgba(255, 255, 255, 0.1) 91.07%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(8px);
+    height: 80%;
+    border-radius:  10rem 0px 0px 0px;
+    width: 90%;
+    margin-left: auto;
+    margin-top: auto;
+}
+.right-side-white img{
+    width: 100%;
+    /* height: 100%; */
+    margin-left: -15%;
+}
+.evergreen-section h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: black;
+    font-family: "poppins_semi_bold";
+}
+.evergreen-section p{
+    color: black;
+}
+.introduce-section{
+    background: linear-gradient(to bottom, #3264C5 0%, #67218C 100%);
+}
+.introduce-section h2{
+    color: white;
+    font-size: 2.5rem;
+}
+.introduce-section ul{
+    color: white;
+}
+.introduce-section p{
+    color: white;
+}
+.introduce-section .solid-circle{
+    width: 80%;
+    padding-bottom: 80%;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(171, 62, 225, 0.2),rgba(100, 105, 239, 0.2),rgba(37, 141, 252, 0.2));
+    position: relative;
+}
+.solid-circle .white-gradient{
+    position: absolute;
+    border-radius: 25rem;
+    background: linear-gradient(34.2deg, rgba(255, 255, 255, 0.5) -84.76%, rgba(255, 255, 255, 0.1) 91.07%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+}
+.solid-circle .gradient-bubble{
+    background: linear-gradient(180deg, #FFFFFF 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+
+}
+.multiple-industries-section h1{
+    font-size: 5rem;
+    line-height: 5.3rem;
+    color: black;
+    font-family: "poppins_bold";
+}
+.multiple-industries-section .gradient-ball{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #AA3EE1 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+    position: absolute;
+    top: -10%;
+    left: 15%;
+    z-index: -1;
+}
+.product-creation-section{
+    background: black;
+    color: white;
+    font-family: "poppins_bold";
+}
+.product-creation-section h2{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: white;
+}
+.product-creation-section hr{
+    background: linear-gradient(to left, #AA3EE1, #8355E9, #258EFC);
+    opacity: 1;
+    width: 50%;
+    margin: 0px;
+}
+.product-creation-section ul{
+    list-style: none;
+    padding: 0px;
+}
+.product-creation-section ul li{
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.product-creation-section ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(180deg, #FFFFFF 4.83%, #914DE6 36%, #735FEC 54.82%, #3D80F7 83.34%, #258EFC 104.21%);
+}
+.nav-container .accordion-item{
+    background: transparent;
+}
+
+.nav-container .accordion-button{
+    border: none !important;
+    background: transparent !important;
+    padding: 0px;
+    color: white;
+    opacity: .7;
+    font-size: 1.4rem;
+    box-shadow: none !important;
+}
+.nav-container .accordion-collapse{
+    background: transparent;
+}
+@media(max-width:991px){
+    .main-content h1{
+        font-size: 3rem;
+    }
+    .glass-circle-container{
+        width: 600px;
+        height: 600px;
+    }
+    
+    .main-content{
+        margin: 10rem 0px;
+    }
+    .page-header .about-main{
+        width: 100%;
+    }
+    .page-header{
+        height: auto;
+        /* background-size: cover; */
+        background-position: center;
+    }
+    .page-header-2{
+        height: auto;
+    }
+    .contact-header{
+        margin: 20rem 0px;
+    }
+    .capsule-lady{
+       position: static;
+       margin: auto;
+    }
+    .main-heading{
+        font-size: 4rem;
+        margin:auto;
+    }
+    .gradient-box .bg-white{
+        padding: 5rem;
+    }
+    .experience-section h1{
+        font-size: 4rem;
+    }
+    .consulting-section h1{
+        font-size: 4rem;
+    }
+    .inteligence-container h1{
+        font-size: 4rem;
+    }
+    .our-work-container h1{
+        font-size: 4rem;
+    }
+    .gradient-circle-2{
+        transform: translateX(0px);
+    }
+    .technology-section h1 {
+        font-size: 3rem;
+    }
+    .smooth-box{
+        width: 60%;
+        padding-bottom: 60%;
+    }
+    .latest-post-section .slide-item{
+        width: 60%;
+    }
+    .latest-post-section h1{
+        font-size: 4rem;        
+    }
+    .gradient-box{
+        margin-left: 0px;
+    }
+    .about-heading ~ hr{
+        width: 100%;
+    }
+    .contact-section h1{
+        font-size: 4rem;
+    }
+    .contact-section label{
+        font-size: 1.5rem;
+    }
+    .custom-input{
+        font-size: 1.5rem;
+    }
+    .custom-select{
+        font-size: 1.5rem;
+    }
+    #name{
+        width: 8rem;
+    }
+    #c_name{
+        width: 8rem;
+    }
+    #number{
+        width: 14rem;
+    }
+    #email{
+        width: 17rem;
+    }
+    .meetus-section h1{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .contact-box{
+        width: 100%;
+    }
+    .inteligence-header{
+        height: auto;
+    }
+    .inteligence-header .main-content{
+        margin: 11rem 0px;
+    }
+    .inteligence-heading{
+        top: -5%;
+    }
+    .solotion-icon-circle{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .blog-header h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .blog-detail-header h1{
+        font-size: 2rem;
+        line-height: 2rem;
+        width: 75%;
+    }
+    .blog-box img{
+        height: 200px;
+    }
+    .blog-box .transparent-gradient{
+        height: 200px;
+    }
+    .consulting-header{
+        height: auto;
+    }
+    .side-box-glass{
+        display: none;
+    }
+    .header-laptop{
+        position: static;
+        transform: translateX(0px);
+        display: block;
+        margin: auto;
+        width: auto;
+    }
+    .consulting-header .ellipse-2{
+        width: 90%;
+        top:10%;
+    }
+    .consulting-header .ellipse-1{
+        width: 45%;
+        display: none;
+    }
+    .industry-trend-section h1{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .industry-trend-section h2{
+        font-size: 1.5rem;
+    }
+    .data-for-brands-section h1{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .half-circle{
+        width: 70%;
+    }
+    .technology-header{
+        height: auto;
+    }
+    .circle-div{
+        height: 300px;
+        margin-top: 100px;
+    }
+    .brand-section h1{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .two-img-section h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .intelligence-section h1{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .intelligence-section .dark-gradient{
+        width: 100%;
+    }
+    .smart-e_commerce-section h1{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .immersive-header{
+        height: auto;
+    }
+    .right-side-white{
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem 10rem 0px 0px;
+    }
+    .right-side-white img{
+        margin: 0px;
+        margin: auto;
+    }
+    .evergreen-section h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .introduce-section h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .multiple-industries-section h1{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    .product-creation-section h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
+
+@media(max-width:767px){
+    .glass-circle-container{
+        width: 365px;
+        height: 365px;
+    }
+    .laptop-section{
+        width: 80%;
+    }
+    .consulting-section .text-center{
+        width: 85%;
+    }
+    .main-content h1{
+        font-size: 2rem;
+    }
+    .main-heading{
+        font-size: 2rem;
+    }
+    .experience-section h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .experience-section p{
+        text-align: center;
+    }
+    .consulting-section h1{
+        font-size: 2rem;
+    }
+    .inteligence-container h1{
+        font-size: 2rem;
+    }
+    .our-work-container h1{
+        font-size: 2rem;
+    }
+    .latest-post-section h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .gradient-circle-2{
+        transform: translateX(0px);
+    }
+    .technology-section h1 {
+        font-size: 2rem;
+    }
+    .capsule-lady{
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+    .gradient-box .bg-white{
+        padding: 2rem;
+    }
+    .experience-section img:nth-child(1){
+        position: static;
+        transform: translate(0px, 0px);
+        width: 100%;
+    }
+    .experience-section img:nth-child(2){
+        width: 100%;
+    }
+    .page-header{
+        background-position: center;
+        background-size: cover;
+    }
+    .count{
+        transform: translate(0px);
+    }
+    .top-navbar img{
+        width: 100px;
+    }
+    .top-navbar-light img{
+        width: 100px;
+    }
+    .latest-post-section .slide-item{
+        width: 70%;
+    }
+    .contact-header h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .contact-header h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .contact-header{
+        margin: 18rem 0px;
+    }
+    .contact-section h1{
+        font-size: 2rem;
+    }
+    .contact-section label{
+        text-align: center;
+    }
+    .input-container{
+        margin: auto;
+    }
+    .icon-circle{
+        width: 100px;
+        height: 100px;
+    }
+    .contact-box{
+        width: 85%;
+        margin: auto;
+        padding: 25px 15px;
+    }
+    .ellipse-2{
+        width: 80%;
+    }
+    .ellipse-1{
+        width: 80%;
+    }
+    .gradient-ball-1{
+        transform: translate(0px, -100%);
+    }
+    .gradient-ball-2{
+        transform: translate(0px, 150%);
+    }
+    .fashion-heading-section .down-arrow{
+        height: 40px;
+    }
+    .custom-input{
+        text-align: center;
+    }
+    .inteligence-heading p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .blog-header h1{
+        font-size: 1.5rem;
+    }
+    .blog-detail-header h1{
+        font-size: 1.5rem;
+        width: 95%;
+    }
+    #industry-trend{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    #inustry-report{
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .industry-trend-section h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .data-for-brands-section h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .circle-div{
+        height: 100px;
+    }
+    .technology-header .white-circle{
+        width: 75%;
+        padding-bottom: 75%;
+    }
+    .technology-img{
+        width: 75%;
+    }
+    .technology-header .gradient-ball-1{
+        left: 5%;
+        top: -50%;
+    }
+    .technology-header .gradient-ball-2{
+        right: 10%;
+        bottom: -50%;
+    }
+    .brand-section h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .brand-section .col-md-6{
+        min-height: 400px;
+    }
+    .two-img-section h2{
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }.intelligence-section h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .center-line{
+        display: none;
+    }
+    .img-1{
+        width: 100%;
+        margin: 0px;
+    }
+    .img-2{
+        width: 100%;
+        margin: 0px;
+        transform: none;
+    }
+    .gradient-border .img-1 ~ .gradient-overlay{
+        width: 100%;
+        margin: 0px;
+    }
+    .gradient-border .img-2 ~ .gradient-overlay{
+        width: 100%;
+        margin: 0px;
+    }
+    .smart-e_commerce-section h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .right-side-white{
+        border-radius: 5rem 5rem 0px 0px;
+    }
+    .evergreen-section h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .introduce-section h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .multiple-industries-section h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .product-creation-section h2{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+}
